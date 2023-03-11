@@ -1,29 +1,70 @@
+
 .container{
     width: 60%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
 }
 
-.box{
+.box-section{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 1rem;
+    color: aqua;
+    cursor: pointer;
 }
 
-img{
-    max-width: 20rem;
+.box-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.box-header-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.2rem;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.box-header-plus{
+    display: none;
+    font-size: 2rem;
+}
+
+.box-header-img{
+    display: none;
     margin: 0 auto;
 }
 
-h2{
-    width: 100%;
+.container:hover .hover-efect{
+    color: black;
+    display: block;
 }
 
+.box-section:hover .box-header-plus{
+    display: block;
+    color: black;
+    transform: rotate(45deg);
+}
+
+.box-section:hover .box-header-img{
+    display: block;
+    width: 20rem;
+}
+
+
+
+
+/* Podstawowe elementy */
 h1{
     width: 100%;
+    margin: 0 0 0.4rem 0;
+    color: black;
 }
 
 hr{
